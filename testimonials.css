@@ -1,0 +1,510 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #121212; /* Dark mode background for all sections */
+    color: #f0d68a; /* Softer gold color */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a; /* Darker background for the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0d68a; /* Gold color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0d68a; /* Gold color */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #e0c06a; /* Slightly lighter gold on hover */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 2rem;
+    text-align: center; /* Center the heading */
+    background-color: #121212; /* Same background color as body */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Space between testimonials */
+}
+
+.testimonial {
+    background: #222222; /* Darker background for testimonial cards */
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%; /* Responsive width for testimonial cards */
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.testimonial h4 {
+    margin-top: 1rem;
+    color: #f0d68a; /* Gold */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a; /* Darker background for footer */
+    color: #f0d68a; /* Gold color */
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #f0d68a; /* Gold */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #e0c06a; /* Slightly darker gold on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #121212; /* Dark mode background for all sections */
+    color: #f0d68a; /* Softer gold color */
+    cursor: auto; /* Show the default cursor */
+}
+
+/* Show default cursor for links and buttons */
+button,
+.nav-links a {
+    cursor: pointer; /* Show the default cursor */
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a; /* Darker background for the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0d68a; /* Gold color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 8px #f0d68a; /* Gold glow effect */
+}
+
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #f0d68a; /* Gold border */
+}
+
+/* Navbar Links Container */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Link Styling */
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0d68a; /* Gold color */
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #e0c06a; /* Slightly lighter gold on hover */
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #f0d68a; /* Gold underline */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* CTA Button */
+.cta {
+    padding: 0.5rem 1.5rem;
+    background-color: #f0d68a; /* Gold */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #e0c06a; /* Slightly darker gold on hover */
+    transform: translateY(-3px);
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+    height: 80vh; /* Adjusted height to make it higher up */
+    padding: 1rem; /* Reduced padding */
+    background: #121212; /* Same background color as body */
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+.hero-cta {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f0d68a; /* Gold */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero-cta:hover {
+    background-color: #e0c06a; /* Slightly darker gold on hover */
+    transform: translateY(-5px);
+}
+
+/* Introduction Section Styles */
+.introduction {
+    padding: 2rem;
+    background-color: #121212; /* Same background color as body */
+    color: #ffffff;
+    text-align: center;
+}
+
+.introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f0d68a; /* Gold */
+    text-transform: uppercase;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 2rem;
+    background-color: #121212; /* Same background color as body */
+    color: #f0d68a; /* Gold */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between service cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.service-card {
+    background: #222222; /* Darker card background */
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.service-card h3 {
+    margin: 0 0 1rem;
+    color: #f0d68a; /* Gold */
+}
+
+.service-card p {
+    color: #e0e0e0; /* Light gray text */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #121212; /* Same background color as body */
+    color: #f0d68a; /* Gold */
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #f0d68a; /* Gold */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #e0c06a; /* Slightly darker gold on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    .navbar .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .hero-content {
+        flex-direction: column; /* Stack hero content on mobile */
+    }
+
+    .hero-text {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .faq-container {
+        flex-direction: column; /* Stack FAQ cards on mobile */
+    }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f0d68a; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e0c06a; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Make scrollbar thin */
+    scrollbar-color: #f0d68a #1a1a1a; /* Thumb color and track color */
+}
